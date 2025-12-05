@@ -82,12 +82,17 @@ export type RouterType = {
   };
   weibo: {
     mid: string;
+    itemid: string;
+    desc: string;
+    scheme: string;
     word: string;
     word_scheme: string;
     note: string;
     flag_desc: string;
-    num: number;
+    // num: number;
+    desc_extr: number;
     onboard_time: number;
+    pic: string;
   };
   zhihu: {
     target: {
@@ -427,5 +432,15 @@ export type RouterType = {
       title: string;
       name: string;
     };
+  };
+  gameres: {
+    id: string;
+    title: string;
+    hot: number | undefined;
+    desc: string;
+    cover: string;
+    timestamp: number | undefined;
+    url: string;
+    mobileUrl: string;
   };
 };
